@@ -305,7 +305,7 @@ for case_spec in "${CASE_SPECS[@]}"; do
     --depth "$storage_depth" \
     --threads "$THREADS" \
     --deployer "$DEPLOYER" \
-    --num-contracts 1 \
+    --num-contracts 0 \
     --accounts-output "$seed_json"
 
   [[ -f "$WORK_DIR/contracts/WorstCaseERC20.sol" ]] || die "expected generated contract not found for storage depth $storage_depth"
